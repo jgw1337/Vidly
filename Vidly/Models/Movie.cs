@@ -11,7 +11,7 @@ namespace Vidly.Models
         // Movie Info
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter the name of the movie")]
         public String Name { get; set; }
 
         [Required]
@@ -26,6 +26,7 @@ namespace Vidly.Models
 
         [Required]
         [Display(Name = "Number in Stock")]
+        [Range(1, 20)]
         public int NumberInStock { get; set; }
 
 

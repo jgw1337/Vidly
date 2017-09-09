@@ -16,6 +16,7 @@ namespace Vidly.Models
         public String Name { get; set; }
 
         [Display(Name = "Date of Birth")]
+        [ValidateAgeForMembership]
         public DateTime? Birthdate { get; set; }
 
         // Membership Info
