@@ -21,6 +21,8 @@ namespace Vidly.DTOs
         [Required]
         public byte GenreTypeId { get; set; }
 
+        public GenreTypeDto GenreType { get; set; }
+
         [Required]
         [Range(1, 20)]
         public int NumberInStock { get; set; }
