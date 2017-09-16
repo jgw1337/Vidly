@@ -27,7 +27,10 @@ namespace Vidly.Controllers
         // GET: Movies
         public ActionResult Index()
         {
-            return View();
+            if (User.IsInRole(RoleName.CAN_MANAGE_MOVIES))
+                return View("AdminList");
+
+            return View("ReadOnlyList");
         }
 
         // GET:Movies/Detail
@@ -37,6 +40,7 @@ namespace Vidly.Controllers
             return View(movies);
         }
 
+        [Authorize(Roles = RoleName.CAN_MANAGE_MOVIES)]
         public ActionResult New()
         {
             var viewModel = new MovieFormViewModel
