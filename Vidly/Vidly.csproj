@@ -253,6 +253,10 @@
     <Compile Include="Migrations\201709161837000_SeedUsers.Designer.cs">
       <DependentUpon>201709161837000_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709162022237_AddDriversLicense.cs" />
+    <Compile Include="Migrations\201709162022237_AddDriversLicense.Designer.cs">
+      <DependentUpon>201709162022237_AddDriversLicense.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -261,6 +265,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Models\ValidateAgeForMembership.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -552,6 +557,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709161837000_SeedUsers.resx">
       <DependentUpon>201709161837000_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709162022237_AddDriversLicense.resx">
+      <DependentUpon>201709162022237_AddDriversLicense.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
